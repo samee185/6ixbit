@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    list-style-type:none;
+    font-family: sans-serif;
+}
+nav{
+    background-color:  white;
+    display: flex;
+    align-items: center;
+    width:100%;
+    padding: 0.5rem 2rem;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: bold;
+}
+nav #logo{
+    display: flex;
+    align-items:baseline;
+}
+nav #logo img{
+    max-width: 24vw;
+}
+nav #logo p{
+    font-size:1.2rem;
+}
+.gold{
+    color: rgb(231, 165, 67);
+}
+nav #hyperlinks{
+    display: flex;
+    gap:2rem;
+    /* width:56vw; */
+}
+nav #hyperlinks ul{
+    display: flex;
+    align-items: center;
+    gap:1.6rem;
+}
+nav  a{
+    color: rgba(0, 0, 0, 0.9);
+}
+nav #btn{
+    display: flex;
+    gap:1rem;
+}
+nav #btn a{
+    padding:0.8rem 0.6rem;
+    border-radius:30px;
+}
+#signIn{
+    border:1px solid rgb(231, 165, 67);
+}
+#create{
+    background-color: rgb(231, 165, 67);
+    color:white;
+}
+#heroPage{
+    background-color: rgb(217,217,217);
+    min-height: 90vh;
+    width: 100%;
+    padding:5rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+#heroPage .header{
+    display:flex;
+    gap:0.4rem;
+}
+#heroPage .header i{
+    font-size: 1.6rem;
+}
+
+#heroPage .header h4{
+    font-size: 1.4rem;
+}
+#heroPage #heroText h1{
+    font-size:4rem;
+    padding:1.6rem 0;
+}
+#heroPage #heroText p{
+    font-size:1.5rem;
+    font-weight: bold;
+    padding:1.6rem 0;
+}
+#heroPage #heroPic{
+    position: relative;
+    left:100px;
+}
+#heroPage #heroPic img{
+    max-width:32vw;
+    max-height:80vh;
+}
