@@ -117,13 +117,22 @@ nav #btn a{
     border: 2px solid rgb(231, 165, 67);
 }
 #menu{
-    font-size:2.3rem;
+    font-size:2.4rem;
     display:none;
 }
-@media(max-width:997px){
-#heroText h1{
-        font-size:3rem;
+@media (max-width:997px){
+    nav #hyperlinks ul{
+        display: none;
     }
+    nav #btn a{
+        padding:0.6rem 1rem;
+    }
+    #menu{
+        display: block;
+    }
+    #heroText h1{
+            font-size:2.8rem;
+        }
     #heroPage #heroText p{
         font-size:1.1rem;
     }
@@ -136,7 +145,7 @@ nav #btn a{
         display: none;
     }
     #heroPage #heroText h1{
-        font-size:2rem;
+        font-size:2.5rem;
     }
     #heroPage{
         grid-template-columns:1fr;
