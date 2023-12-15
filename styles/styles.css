@@ -33,7 +33,6 @@ nav #logo p{
 nav #hyperlinks{
     display: flex;
     gap:2rem;
-    /* width:56vw; */
 }
 nav #hyperlinks ul{
     display: flex;
@@ -70,11 +69,10 @@ nav #btn a{
 }
 #heroPage{
     background-color: rgb(217,217,217);
-    min-height: 90vh;
     width: 100%;
     padding:5rem 2rem;
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 #heroPage .header{
     display:flex;
@@ -84,27 +82,70 @@ nav #btn a{
     font-size: 1.6rem;
 }
 
-#heroPage .header h4{
+#heroPage .header p{
     font-size: 1.4rem;
 }
 #heroPage #heroText h1{
     font-size:4rem;
-    padding:1.2rem 0;
+    padding:0 0 1rem 0;
 }
 #heroPage #heroText p{
     font-size:1.4rem;
-    font-weight:600;
-    padding:1rem 0;
-    text-align: justify;
+    font-weight:550;
+    padding:0 0 1rem 0;
+}
+#heroPage #heroPic{
+    display: flex;
+    justify-content: center;
 }
 #heroPage #heroPic img{
-    position: relative;
-    max-width:32vw;
-    max-height:80vh;
+    max-width:28vw;
 }
-#heroPage #heroPic #coins img{
-    max-width:8vw;
-    position: absolute;
-    left:0; 
-    bottom: 800px;
+#getStarted{
+    padding:0.6rem 0.8rem;
+    background-color: rgb(231, 165, 67);
+    border-radius:30px;
+    color:rgb(245, 245, 245);
+    font-size:1.3rem;
+    font-weight:550;
+    text-transform: uppercase;
+}
+#getStarted:hover{
+    color:rgb(0, 0, 0);
+    background-color: rgb(245, 245, 245
+    );
+    border: 2px solid rgb(231, 165, 67);
+}
+#menu{
+    font-size:2.3rem;
+    display:none;
+}
+@media(max-width:997px){
+#heroText h1{
+        font-size:3rem;
+    }
+    #heroPage #heroText p{
+        font-size:1.1rem;
+    }
+    #getStarted{
+        font-size:0.8rem;
+    }
+}
+@media (max-width:757px){
+    nav #btn{
+        display: none;
+    }
+    #heroPage #heroText h1{
+        font-size:2rem;
+    }
+    #heroPage{
+        grid-template-columns:1fr;
+        row-gap:1.5rem;
+    }
+    #heroPage #heroPic img{
+        max-width:40vw;
+    }
+    #heroPage #heroText p{
+        font-size:1rem;
+    }
 }
